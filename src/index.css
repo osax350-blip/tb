@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Tajawal', system-ui, sans-serif;
+  background: #F9FAFE;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card {
+  box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  transition: all 0.2s ease;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

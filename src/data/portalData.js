@@ -1,0 +1,132 @@
+export const announcements = [
+  {
+    id: 1,
+    color: 'ut-green',
+    icon: 'activity',
+    titleAr: '📢 فتح باب القبول للفصل الدراسي الأول 1448هـ',
+    titleEn: '📢 Admissions Open for First Semester 1448H',
+    bodyAr: 'التقديم يبدأ يوم الأحد 10/8 ويستمر حتى 5/9. اضغط لمعرفة الشروط والأدلة.',
+    bodyEn: 'Applications open Sunday 10/8 through 5/9. Click to view requirements and guides.',
+    dateAr: 'نشر: 27 أبريل 2026',
+    dateEn: 'Published: April 27, 2026',
+  },
+  {
+    id: 2,
+    color: 'ut-blue',
+    icon: 'calendar',
+    titleAr: '🗓️ جدول الاختبارات النهائية للفصل الدراسي الثاني',
+    titleEn: '🗓️ Final Exam Schedule — Second Semester',
+    bodyAr: 'الاختبارات تبدأ يوم 5 يونيو. يمكنكم الاطلاع على الجدول عبر بوابة الطالب.',
+    bodyEn: 'Exams start June 5. View the schedule via the student portal.',
+    dateAr: 'نشر: 20 أبريل 2026',
+    dateEn: 'Published: April 20, 2026',
+  },
+  {
+    id: 3,
+    color: 'ut-green',
+    icon: 'file-text',
+    titleAr: '📄 خدمة التحقق من الوثائق الآن متاحة للخريجين',
+    titleEn: '📄 Document Verification Now Available for Graduates',
+    bodyAr: 'يمكن للجهات الخارجية التحقق من صحة الشهادات عبر النظام دون الحاجة لدخول الطالب.',
+    bodyEn: 'External parties can now verify certificates through the system without student login.',
+    dateAr: 'نشر: 15 أبريل 2026',
+    dateEn: 'Published: April 15, 2026',
+  },
+];
+
+export const services = [
+  {
+    id: 'admission',
+    bgColor: 'bg-blue-100',
+    textColor: 'text-ut-blue',
+    icon: 'book-open',
+    titleAr: 'دليل القبول',
+    titleEn: 'Admission Guide',
+    bodyAr: 'شروط التقديم، النسب الموزونة، والبرامج المتاحة للطلاب الجدد.',
+    bodyEn: 'Application requirements, weighted scores, and available programs for new students.',
+    linkKey: 'serviceLink',
+  },
+  {
+    id: 'verify',
+    bgColor: 'bg-emerald-100',
+    textColor: 'text-ut-green',
+    icon: 'check-circle',
+    titleAr: 'التحقق من الوثائق',
+    titleEn: 'Document Verification',
+    bodyAr: 'خدمة التحقق من صحة الشهادات والسجلات الأكاديمية (لأصحاب العمل/الجهات الخارجية).',
+    bodyEn: 'Verify the authenticity of certificates and academic records (for employers/external parties).',
+    linkKey: 'verifyLink',
+  },
+  {
+    id: 'calendar',
+    bgColor: 'bg-amber-100',
+    textColor: 'text-amber-700',
+    icon: 'calendar-days',
+    titleAr: 'التقويم الأكاديمي',
+    titleEn: 'Academic Calendar',
+    bodyAr: 'مواعيد بداية الفصول، اختبارات منتصف الفصل، أيام الحذف والإضافة والإجازات الرسمية.',
+    bodyEn: 'Semester start dates, midterm exams, add/drop periods, and official holidays.',
+    linkKey: 'calendarLink',
+  },
+];
+
+export const modalContents = {
+  admission: {
+    ar: {
+      title: '📘 دليل القبول',
+      titleColor: 'text-ut-blue',
+      body: 'شروط القبول لمرحلة البكالوريوس: نسبة 60% فأعلى في الثانوية، اختبار القدرات العامة، وأي متطلبات إضافية للكليات الصحية.',
+      extra: '🗓️ مواعيد التقديم: 10/8 - 5/9',
+      pdfLabel: 'رابط التحميل PDF',
+    },
+    en: {
+      title: '📘 Admission Guide',
+      titleColor: 'text-ut-blue',
+      body: 'Undergraduate admission requirements: 60%+ secondary average, general aptitude test, and any additional requirements for health colleges.',
+      extra: '🗓️ Application Dates: 10/8 - 5/9',
+      pdfLabel: 'Download PDF',
+    },
+  },
+  verify: {
+    ar: {
+      title: '✅ التحقق من الوثائق',
+      titleColor: 'text-ut-green',
+      body: 'يمكن لأصحاب العمل أو أي جهة خارجية إدخال رقم الوثيقة وسنة التخرج للتحقق من صحة الشهادة مباشرة. الخدمة مجانية ومعتمدة.',
+      inputPlaceholder: 'رقم الوثيقة',
+      btnLabel: 'تحقق',
+    },
+    en: {
+      title: '✅ Document Verification',
+      titleColor: 'text-ut-green',
+      body: 'Employers or external parties can enter the document number and graduation year to directly verify certificate authenticity. Free and accredited service.',
+      inputPlaceholder: 'Document Number',
+      btnLabel: 'Verify',
+    },
+  },
+  calendar: {
+    ar: {
+      title: '📅 التقويم الأكاديمي 1447-1448هـ',
+      titleColor: 'text-amber-700',
+      items: [
+        'بداية الفصل الدراسي الأول: 25 محرم 1448هـ',
+        'اختبارات منتصف الفصل: 9 صفر',
+        'فترة الحذف والإضافة: الأسبوع الثاني',
+        'الاختبارات النهائية: 5 ربيع الآخر',
+        'إجازة الربيع: 5 جمادى الأول',
+      ],
+      pdfLabel: 'تحميل التقويم الكامل PDF',
+    },
+    en: {
+      title: '📅 Academic Calendar 1447-1448H',
+      titleColor: 'text-amber-700',
+      items: [
+        'First Semester Start: 25 Muharram 1448H',
+        'Midterm Exams: 9 Safar',
+        'Add/Drop Period: Second Week',
+        'Final Exams: 5 Rabi al-Akhir',
+        'Spring Break: 5 Jumada al-Awwal',
+      ],
+      pdfLabel: 'Download Full Calendar PDF',
+    },
+  },
+};
