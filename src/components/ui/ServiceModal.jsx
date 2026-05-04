@@ -1,4 +1,4 @@
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../contexts/useLanguage';
 import { modalContents } from '../../data/portalData';
 
 export default function ServiceModal({ serviceId, onClose }) {

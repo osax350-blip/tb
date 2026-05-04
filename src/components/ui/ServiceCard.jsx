@@ -1,5 +1,5 @@
 import { BookOpen, CheckCircle, CalendarDays } from 'lucide-react';
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../contexts/useLanguage';
 
 const iconMap = {
   'book-open': BookOpen,

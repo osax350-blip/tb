@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Bell, LogIn, ShieldCheck } from 'lucide-react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../contexts/useLanguage';
 import { announcements, services } from '../data/portalData';
 import AnnouncementCard from '../components/ui/AnnouncementCard';
 import ServiceCard from '../components/ui/ServiceCard';

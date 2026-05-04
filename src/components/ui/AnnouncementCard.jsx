@@ -1,5 +1,5 @@
 import { Activity, Calendar, FileText } from 'lucide-react';
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../contexts/useLanguage';
 
 const iconMap = {
   activity: Activity,

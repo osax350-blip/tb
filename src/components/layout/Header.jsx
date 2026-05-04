@@ -1,5 +1,5 @@
 import { Globe } from 'lucide-react';
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../contexts/useLanguage';
 
 export default function Header() {
   const { t, toggleLanguage } = useLanguage();

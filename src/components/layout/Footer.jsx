@@ -1,5 +1,5 @@
 import { Phone, Globe } from 'lucide-react';
-import { useLanguage } from '../../contexts/LanguageContext';
+import { useLanguage } from '../../contexts/useLanguage';
 
 // Simple inline SVG icons for social media
 function FacebookIcon() {

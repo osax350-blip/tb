@@ -1,6 +1,8 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
-const LanguageContext = createContext(null);
+// Context is intentionally exported alongside the Provider component.
+// eslint-disable-next-line react-refresh/only-export-components
+export const LanguageContext = createContext(null);
 
 const translations = {
   ar: {
@@ -108,8 +110,4 @@ export function LanguageProvider({ children }) {
       {children}
     </LanguageContext.Provider>
   );
-}
-
-export function useLanguage() {
-  return useContext(LanguageContext);
 }
